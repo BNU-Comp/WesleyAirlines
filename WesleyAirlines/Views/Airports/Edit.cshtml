@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="CountryCode" class="control-label"></label>
-                <select asp-for="CountryCode" class="form-control"></select>
+                <select asp-for="CountryCode" asp-items="@Html.GetEnumSelectList<CountryCodes>()"class="form-control"></select>
                 <span asp-validation-for="CountryCode" class="text-danger"></span>
             </div>
             <div class="form-group">

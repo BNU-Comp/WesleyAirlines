@@ -18,5 +18,7 @@ namespace WesleyAirlines.Data
 
         public DbSet<Destination> Destinations { get; set; }
 
+        public DbSet<WesleyAirlines.Models.Customer> Customer { get; set; }
+
     }
 }
